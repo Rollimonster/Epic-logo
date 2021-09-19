@@ -29,14 +29,6 @@ Roli.Text = "Made By Rolimonster"
 Roli.TextColor3 = Color3.fromRGB(0, 0, 0)
 Roli.TextSize = 30.000
 
-Me.Name = "Me"
-Me.Parent = ScreenGui
-Me.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Me.BackgroundTransparency = 1.000
-Me.Position = UDim2.new(0.417004049, 0, 0.063380301, 0)
-Me.Size = UDim2.new(0, 164, 0, 165)
-Me.Image = "http://www.roblox.com/asset/?id=7513477056"
-
 local function LLTLTO_fake_script() -- RocketRoyale.LocalScript 
     local script = Instance.new('LocalScript', RocketRoyale)
 
@@ -57,15 +49,7 @@ local function VZET_fake_script() -- Roli.LocalScript
     local script = Instance.new('LocalScript', Roli)
 
     script.Parent.Visible = true
-    wait(10)
-    script.Parent.Visible = false
-end
-coroutine.wrap(VZET_fake_script)()
-local function OILIOI_fake_script() -- Me.LocalScript 
-    local script = Instance.new('LocalScript', Me)
-
-    script.Parent.Visible = true
     wait(5)
     script.Parent.Visible = false
 end
-coroutine.wrap(OILIOI_fake_script)()
+coroutine.wrap(VZET_fake_script)()
