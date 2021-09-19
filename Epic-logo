@@ -1,0 +1,71 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local RocketRoyale = Instance.new("ImageLabel")
+local Roli = Instance.new("TextLabel")
+local Me = Instance.new("ImageLabel")
+
+ScreenGui.Parent = game.CoreGui
+
+RocketRoyale.Name = "Rocket Royale"
+RocketRoyale.Parent = ScreenGui
+RocketRoyale.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RocketRoyale.BackgroundTransparency = 1.000
+RocketRoyale.Position = UDim2.new(0.417004049, 0, 0.353873253, 0)
+RocketRoyale.Size = UDim2.new(0, 164, 0, 165)
+RocketRoyale.Image = "http://www.roblox.com/asset/?id=7513383156"
+
+Roli.Name = "Roli"
+Roli.Parent = RocketRoyale
+Roli.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roli.BackgroundTransparency = 1.000
+Roli.Position = UDim2.new(-0.113409698, 0, -0.24324581, 0)
+Roli.Size = UDim2.new(0, 200, 0, 50)
+Roli.Font = Enum.Font.SourceSans
+Roli.Text = "Made By Rolimonster"
+Roli.TextColor3 = Color3.fromRGB(0, 0, 0)
+Roli.TextSize = 30.000
+
+Me.Name = "Me"
+Me.Parent = ScreenGui
+Me.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Me.BackgroundTransparency = 1.000
+Me.Position = UDim2.new(0.417004049, 0, 0.063380301, 0)
+Me.Size = UDim2.new(0, 164, 0, 165)
+Me.Image = "http://www.roblox.com/asset/?id=7513477056"
+
+local function LLTLTO_fake_script() -- RocketRoyale.LocalScript 
+    local script = Instance.new('LocalScript', RocketRoyale)
+
+    script.Parent.Visible = true
+    wait (5)
+    script.Parent.Visible = false
+end
+coroutine.wrap(LLTLTO_fake_script)()
+local function NRBVAM_fake_script() -- RocketRoyale.LocalScript 
+    local script = Instance.new('LocalScript', RocketRoyale)
+
+    local blur = Instance.new("BlurEffect", game.Lighting)
+    wait(5)
+    game.Lighting.Blur:Destroy()
+end
+coroutine.wrap(NRBVAM_fake_script)()
+local function VZET_fake_script() -- Roli.LocalScript 
+    local script = Instance.new('LocalScript', Roli)
+
+    script.Parent.Visible = true
+    wait(10)
+    script.Parent.Visible = false
+end
+coroutine.wrap(VZET_fake_script)()
+local function OILIOI_fake_script() -- Me.LocalScript 
+    local script = Instance.new('LocalScript', Me)
+
+    script.Parent.Visible = true
+    wait(5)
+    script.Parent.Visible = false
+end
+coroutine.wrap(OILIOI_fake_script)()
