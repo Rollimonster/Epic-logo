@@ -1,55 +1,91 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
-local RocketRoyale = Instance.new("ImageLabel")
-local Roli = Instance.new("TextLabel")
-local Me = Instance.new("ImageLabel")
+local RoliText = Instance.new("TextLabel")
+local Roli = Instance.new("ImageLabel")
+local Logo = Instance.new("ImageLabel")
 
 ScreenGui.Parent = game.CoreGui
 
-RocketRoyale.Name = "Rocket Royale"
-RocketRoyale.Parent = ScreenGui
-RocketRoyale.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RocketRoyale.BackgroundTransparency = 1.000
-RocketRoyale.Position = UDim2.new(0.417004049, 0, 0.353873253, 0)
-RocketRoyale.Size = UDim2.new(0, 164, 0, 165)
-RocketRoyale.Image = "http://www.roblox.com/asset/?id=7513383156"
+RoliText.Name = "RoliText"
+RoliText.Parent = ScreenGui
+RoliText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RoliText.BackgroundTransparency = 1.000
+RoliText.Position = UDim2.new(0.39101848, 0, 0.371478856, 0)
+RoliText.Size = UDim2.new(0, 200, 0, 50)
+RoliText.Font = Enum.Font.SourceSans
+RoliText.Text = "By Rolimonster"
+RoliText.TextColor3 = Color3.fromRGB(0, 0, 0)
+RoliText.TextSize = 65.000
 
 Roli.Name = "Roli"
-Roli.Parent = RocketRoyale
-Roli.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roli.Parent = RoliText
+Roli.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 Roli.BackgroundTransparency = 1.000
-Roli.Position = UDim2.new(-0.113409698, 0, -0.24324581, 0)
-Roli.Size = UDim2.new(0, 200, 0, 50)
-Roli.Font = Enum.Font.SourceSans
-Roli.Text = "Made By Rolimonster"
-Roli.TextColor3 = Color3.fromRGB(0, 0, 0)
-Roli.TextSize = 30.000
+Roli.Position = UDim2.new(0, 0, -4.01999998, 0)
+Roli.Size = UDim2.new(0, 200, 0, 201)
+Roli.Image = "http://www.roblox.com/asset/?id=7513477056"
 
-local function LLTLTO_fake_script() -- RocketRoyale.LocalScript 
-    local script = Instance.new('LocalScript', RocketRoyale)
+Logo.Name = "Logo"
+Logo.Parent = ScreenGui
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 2.000
+Logo.ClipsDescendants = true
+Logo.Position = UDim2.new(0.391700387, 0, 0.51584506, 0)
+Logo.Size = UDim2.new(0, 213, 0, 213)
+Logo.Image = "http://www.roblox.com/asset/?id=7513383156"
 
-    script.Parent.Visible = true
-    wait (5)
-    script.Parent.Visible = false
+local function IYWBJ_fake_script() -- RoliText.LocalScript 
+    local script = Instance.new('LocalScript', RoliText)
+
+    while true do
+        for a = 1,360,1 do
+            wait(0.1)
+            script.Parent.TextColor3 = Color3.fromHSV(a/360,1,1)
+        end
+    end
+    
 end
-coroutine.wrap(LLTLTO_fake_script)()
-local function NRBVAM_fake_script() -- RocketRoyale.LocalScript 
-    local script = Instance.new('LocalScript', RocketRoyale)
+coroutine.wrap(IYWBJ_fake_script)()
+local function JIKSRQ_fake_script() -- Roli.LocalScript 
+    local script = Instance.new('LocalScript', Roli)
 
     local blur = Instance.new("BlurEffect", game.Lighting)
-    wait(5)
+    wait(10)
     game.Lighting.Blur:Destroy()
 end
-coroutine.wrap(NRBVAM_fake_script)()
-local function VZET_fake_script() -- Roli.LocalScript 
+coroutine.wrap(JIKSRQ_fake_script)()
+local function TGITDKV_fake_script() -- Roli.LocalScript 
     local script = Instance.new('LocalScript', Roli)
 
     script.Parent.Visible = true
-    wait(5)
+    wait (10)
     script.Parent.Visible = false
 end
-coroutine.wrap(VZET_fake_script)()
+coroutine.wrap(TGITDKV_fake_script)()
+local function ROJG_fake_script() -- RoliText.LocalScript 
+    local script = Instance.new('LocalScript', RoliText)
+
+    script.Parent.Visible = true
+    wait (10)
+    script.Parent.Visible = false
+end
+coroutine.wrap(ROJG_fake_script)()
+local function MESIHI_fake_script() -- Logo.LocalScript 
+    local script = Instance.new('LocalScript', Logo)
+
+    script.Parent.Visible = true
+    wait (10)
+    script.Parent.Visible = false
+end
+coroutine.wrap(MESIHI_fake_script)()
+local function LMDG_fake_script() -- Logo.LocalScript 
+    local script = Instance.new('LocalScript', Logo)
+
+    while true do
+        for a = 1,360,1 do
+            wait(0.1)
+            script.Parent.ImageColor3 = Color3.fromHSV(a/360,1,1)
+        end
+    end
+    
+end
+coroutine.wrap(LMDG_fake_script)()
